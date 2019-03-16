@@ -28,7 +28,7 @@
 ###（周三/周日检查）
 ### 3.13 ~ 3.16  
 - **1.文档** 
-- git, github
+- git, github   贺滔
 - python基本语法
 - linux服务器基本环境配置
 - vue.js学习
