@@ -4,7 +4,7 @@
 # @Author  : A
 # @Time    : 2019/4/1 14:19
 # @Contact : qq1694522669@gmail.com
-from com.a.util import DBUtil
+from com.a.util import DBUtils
 
 
 class ItemsDAO:
@@ -24,7 +24,7 @@ class ItemsDAO:
         temp.remove([''])
         # sql_str = self.__INSERT_ITEMS.format(temp[0], temp[1], temp[2], temp[3])
         # print(sql_str)
-        db = DBUtil()
+        db = DBUtils()
         connect = db.getConnect()
         cursor = db.getCursor()
         cursor.executemany(self.__INSERT_ITEMS, temp)

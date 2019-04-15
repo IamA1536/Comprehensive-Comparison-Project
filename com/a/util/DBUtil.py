@@ -8,9 +8,10 @@
 import pymysql
 
 
-class DBUtil:
+class DBUtils:
     def __init__(self):
         self.__db = pymysql.connect("95.163.197.217", "root", "201269", "mysql", use_unicode=True, charset='utf8')
+        # print("connect successful!")
         self.__cursor = self.__db.cursor()
 
     def getConnect(self):
