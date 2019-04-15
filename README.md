@@ -27,16 +27,23 @@
 # 进度情况
 ###（周三/周日检查）
 ### 3.13 ~ 3.16  
-- **1.文档** 
+- **文档** 
 - git, github
 - python基本语法
 - linux服务器基本环境配置
 - vue.js学习
-- 爬虫学习
+- ~~爬虫学习~~
 
+### 4.15~4.21
+- 爬虫完成（实现京东和苏宁易购，淘宝无权限）
+- 数据库部署完成
+- 待补充
 
 # 问题
 ### 3.13 ~ 3.16 
 - NONE
+### 4.15~4.21
+- 淘宝权限问题
+
 ***
 ### Powered by [SaltFishTeam](https://github.com/IamA1536/Comprehensive-Comparison-Project)
