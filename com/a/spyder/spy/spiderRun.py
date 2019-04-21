@@ -6,12 +6,15 @@
 # @Contact : qq1694522669@gmail.com
 import threading
 
+from com.a.persisitence.ItemsDAO import ItemsDAO
 from com.a.spyder.spy.jd import JdSpider
 from com.a.spyder.spy.suning import SuningSpider
 
 
 class SpiderRun(threading.Thread):
     def __init__(self, type, string):
+        self.itemsDAO = ItemsDAO
+
         super(SpiderRun, self).__init__()
         self.jdspider = JdSpider()
         self.suningspider = SuningSpider()
@@ -21,6 +24,7 @@ class SpiderRun(threading.Thread):
     def stop(self):
         self.suningspider.change_State()
         self.jdspider.change_State()
+        self.itemsDAO.clearData()
         pass
 
     def run(self):

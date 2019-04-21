@@ -17,11 +17,12 @@ class ItemsDAO:
     def insertData(self, str):
         temp = []
         count = 0
-        for line in str.split("\n"):
+        for line in str.split("N\n"):
             temps = line.split("$$")
             count += 1
             temp.append(temps)
         temp.remove([''])
+        print(temp)
         # sql_str = self.__INSERT_ITEMS.format(temp[0], temp[1], temp[2], temp[3])
         # print(sql_str)
         db = DBUtils()
@@ -35,7 +36,8 @@ class ItemsDAO:
         pass
 
     def clearData(self):
-        db = DBUtil()
+        db = DBUtils()
         cursor = db.getCursor()
         cursor.execute(self.__TRUNCATE_TABLE)
         db.closeConnect()
+

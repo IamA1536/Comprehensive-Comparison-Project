@@ -44,6 +44,9 @@
 ### 3.13 ~ 3.16 
 - NONE
 ### 4.15~4.21
-- 淘宝权限问题
+- ~~京东中文问题~~
+- 苏宁易购的部分中文问题
+- ~~淘宝权限问题（因反爬虫放弃）~~
+
 ***
 ### Powered by [SaltFishTeam](https://github.com/IamA1536/Comprehensive-Comparison-Project)
