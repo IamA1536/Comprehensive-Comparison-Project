@@ -115,7 +115,7 @@ class SuningSpider:
                 for a in item.find('.img-block').find('a'):
                     products['img'] = a.find('img').get('src')
                 string += products['url'] + "$$" + products['price'] + "$$" + products['description'] + "$$" + products[
-                    'img'] + "$$2" + "\n"
+                    'img'] + "$$2" + "N\n"
                 print(count)
                 if count == 60:
                     count = 0
@@ -132,6 +132,7 @@ class SuningSpider:
                 self.next_page(i)
                 time.sleep(2)
                 if self.isStop:
+                    # self.itemsDAO.clearData()
                     break
         except Exception as e:
             print(e.args)

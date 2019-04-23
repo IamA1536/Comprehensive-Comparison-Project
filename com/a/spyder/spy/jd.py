@@ -88,7 +88,7 @@ class JdSpider:
         count = 0
         for item in self.data:
             count += 1
-            string += str(item[0]) + "$$" + str(item[1]) + "$$" + str(item[2]) + "$$" + str(item[3]) + "$$1" + "\n"
+            string += str(item[0]) + "$$" + str(item[1]) + "$$" + str(item[2]) + "$$" + str(item[3]) + "$$1" + "N\n"
             if count == 30:
                 count = 0
                 itemsDAO.insertData(string)
@@ -121,6 +121,7 @@ class JdSpider:
             self.write_to_file(itemsDAO)
             self.turn_page()
             if self.isStop:
+                # itemsDAO.clearData()
                 break
         # self.close_file()
         self.close_browser()

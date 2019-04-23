@@ -12,7 +12,9 @@ from com.a.spyder.spy.suning import SuningSpider
 
 class SpiderRun(threading.Thread):
     def __init__(self, type, string):
+
         super(SpiderRun, self).__init__()
+
         self.jdspider = JdSpider()
         self.suningspider = SuningSpider()
         self.string = string
@@ -21,6 +23,7 @@ class SpiderRun(threading.Thread):
     def stop(self):
         self.suningspider.change_State()
         self.jdspider.change_State()
+
         pass
 
     def run(self):
