@@ -132,6 +132,7 @@ class SuningSpider:
                 self.next_page(i)
                 time.sleep(2)
                 if self.isStop:
+                    self.isStop = False
                     # self.itemsDAO.clearData()
                     break
         except Exception as e:

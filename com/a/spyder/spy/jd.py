@@ -121,6 +121,7 @@ class JdSpider:
             self.write_to_file(itemsDAO)
             self.turn_page()
             if self.isStop:
+                self.isStop = False
                 # itemsDAO.clearData()
                 break
         # self.close_file()
